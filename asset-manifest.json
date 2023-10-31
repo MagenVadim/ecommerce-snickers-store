@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ecommerce-snickers-store/static/css/main.7451a3a8.css",
+    "main.js": "/ecommerce-snickers-store/static/js/main.d82c4d53.js",
+    "index.html": "/ecommerce-snickers-store/index.html",
+    "main.7451a3a8.css.map": "/ecommerce-snickers-store/static/css/main.7451a3a8.css.map",
+    "main.d82c4d53.js.map": "/ecommerce-snickers-store/static/js/main.d82c4d53.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7451a3a8.css",
+    "static/js/main.d82c4d53.js"
+  ]
+}
