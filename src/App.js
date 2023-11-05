@@ -4,6 +4,7 @@ import Products from './Products/Products';
 import Recommended from './Recommended/Recommended';
 import Sidebar from './Sidebar/Sidebar';
 import Card from './components/Card';
+import './index.css'
 //Database
 import products from './db/db'
 
@@ -16,8 +17,10 @@ function App() {
     setQuery(event.target.value)
   }
 
-  const filteredItems = products.filter(product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()!==-1))
-
+  // const filteredItems = products.filter(product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase())!==-1)
+  const filteredItems = products.filter(
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+  );
 
   //-----------------Radio Filter--------------------
 
@@ -34,8 +37,8 @@ function App() {
   function filtredData(products, selected, query){
     let filteredProducts = products;
     // Filtering input items
-    if(query){
-      filteredProducts=filteredItems
+    if (query) {
+      filteredProducts = filteredItems;
     }
 
     //-----------------Selected Filter--------------------
@@ -64,7 +67,7 @@ function App() {
   return (
     <>
         <Sidebar handleChange={handleChange}/>
-        <Navigation query={query}handleInputChange={handleInputChange}/>
+        <Navigation query={query} handleInputChange={handleInputChange}/>
         <Recommended handleClick={handleClick}/>
         <Products result={result}/>        
     </>

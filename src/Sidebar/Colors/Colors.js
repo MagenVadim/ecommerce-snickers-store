@@ -6,7 +6,7 @@ function Colors({handleChange}) {
     <div>
         <h2 className="sidebar-title color-title"> Colors</h2>
         <label className="sidebar-label-container">
-          <input onChange={handleChange} type="radio" value="" name="test2"/>
+          <input onChange={handleChange} type="radio" value="" name="test3"/>
           <span className="checkmark all"></span>All
         </label>
 
@@ -14,7 +14,7 @@ function Colors({handleChange}) {
         handleChange={handleChange}
         value="black"
         title="Black"
-        name="test1"
+        name="test3"
         color="black"
         />
 
@@ -22,7 +22,7 @@ function Colors({handleChange}) {
         handleChange={handleChange}
         value="blue"
         title="Blue"
-        name="test1"
+        name="test3"
         color="blue"
         />
 
@@ -30,7 +30,7 @@ function Colors({handleChange}) {
         handleChange={handleChange}
         value="red"
         title="Red"
-        name="test1"
+        name="test3"
         color="red"
         />
 
@@ -38,11 +38,11 @@ function Colors({handleChange}) {
         handleChange={handleChange}
         value="green"
         title="Green"
-        name="test1"
+        name="test3"
         color="green"
         />
       <label className="sidebar-label-container">
-        <input type="radio" onChange={handleChange} value="white" name="test1"/>
+        <input type="radio" onChange={handleChange} value="white" name="test3"/>
         <span
            className="checkmark"
            style={{background:"white", border:"2px solid black"}}
