@@ -12,21 +12,23 @@ function App() {
 
   //-----------------Input Filter--------------------
   const [query, setQuery] = useState("")
-  const handleInputChange = event =>{
-    setQuery(event.target.valey)
+  const handleInputChange = (event) =>{
+    setQuery(event.target.value)
   }
 
   const filteredItems = products.filter(product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()!==-1))
 
 
   //-----------------Radio Filter--------------------
-  const handleChange = event =>{
-    setSelectedCategory(event.target.valey)
-  } 
+
+  const handleChange = (event) => {
+    setSelectedCategory(event.target.value)
+  }
+
 
   //-----------------Buttons Filter--------------------
-  const handleClick = event =>{
-    setSelectedCategory(event.target.valey)
+  const handleClick = (event) =>{
+    setSelectedCategory(event.target.value)
   }
 
   function filtredData(products, selected, query){
